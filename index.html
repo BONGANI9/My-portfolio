@@ -1,0 +1,275 @@
+
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Kokwe - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css"><style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="p-4">
+        <!-- Navigation Menu -->
+        <div class="flex justify-between items-center mb-12">
+            <div class="flex items-center">
+                <img src="media/log.png" alt="Logo" class="w-20 h-20 rounded-full mr-4"/>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">About Me</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Portfolio</a>
+                    <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Services</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact me</a>
+                </nav>
+            </div>
+            <a href="#contact" class="hidden md:block px-6 py-2 border-2 border-gray-900 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-200">Book A Call ↗</a>
+        </div>
+
+        <!-- Home Page Content -->
+        <section id="home" class="relative min-h-screen flex flex-col items-center justify-center text-white pt-2">
+            <!-- Background Image and Overlay -->
+            <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('media/WEBSITE\ BACKGROUND.jpg');"></div>
+
+            <!-- Main content container -->
+            <div class="relative z-20 flex flex-col items-center justify-center w-full max-w-4xl h-full">
+                <!-- Main image, animated on load -->
+                <div class="relative w-full h-auto fade-in-up">
+                    <img src="media/Bongani2.png" alt="Profile of Bongani Kokwe" class="w-full h-auto object-contain rounded-lg">
+                </div>
+            </div>
+
+            <!-- Overlaid text content with absolute positioning -->
+            <div class="absolute inset-0 z-30 flex flex-col items-center justify-center text-center p-10">
+                <!-- Stats -->
+        <div class="absolute left-0 top-2/3 transform -translate-y-1/2 p-8 max-w-md flex flex-col items-start text-left z-30">
+    <div class="flex space-x-4 mb-8">
+        <div>
+            <p class="text-2xl md:text-3xl font-extrabold text-gray-900">+7</p>
+            <p class="text-gray-600 text-sm">Project completed</p>
+        </div>
+        <div>
+            <p class="text-2xl md:text-3xl font-extrabold text-gray-900">+0</p>
+            <p class="text-gray-600 text-sm">Startup raised</p>
+        </div>
+    </div>
+    <h1 class="text-3xl md:text-5xl font-light tracking-wide text-gray-900 mb-10">Welcome</h1>
+    <p class="text-base text-gray-700 font-normal mb-10">It's Bongani Kokwe, a digital Associate.</p>
+    <p class="text-gray-500 text-sm">Scroll down ↓</p>
+</div>
+        </section>
+        <hr class="border-t border-gray-300 my-12">
+        <!-- About Me Page Content -->
+        <section id="about" class="page-content mt-24">
+<div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 mt-8">
+    <!-- Flip Card (Image) -->
+    <div class="md:w-1/3 w-full flex justify-center mb-6 md:mb-0">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">Bongani Kokwe</p>
+                    <img src="media/Bongani2.png" alt="Bongani Kokwe" style="width:140px; height:140px; border-radius:50%; object-fit:cover; margin:0 auto;" />
+                    <p>Hover Me</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">Interesting Fact About Me</p> <br>
+                    <p>
+                     I love producing music , in the music industry i am professionally known as "Kwess Junior". I design T-shirt my first merch line is called "UVALO" which offers a wide range of unique designs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Me Text Content -->
+<div class="md:w-2/3 w-full">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">About Me</h2>
+    <p class="text-base md:text-lg text-gray-700 mb-4">
+        I am Bongani Kokwe, a passionate Digital Associate dedicated to crafting engaging and impactful digital experiences. My portfolio spans AI-powered tools, interactive dashboards, and modern websites for businesses and individuals.
+    </p>
+    <p class="text-base md:text-lg text-gray-700">
+        My strengths include visual design, user experience (UX), and web development. I thrive on solving complex problems with creative solutions and enjoy collaborating with teams to turn ideas into reality. I believe in continuous learning and staying ahead of digital trends to deliver results that matter.
+    </p>
+    <div class="flex space-x-8 mt-12">
+        <div>
+            <p class="text-4xl md:text-5xl lg:text-6xl font-extrabold">+1</p>
+            <p class="text-gray-500">Years of experience</p>
+        </div>
+        <div>
+            <p class="text-4xl md:text-5xl lg:text-6xl font-extrabold">+5</p>
+            <p class="text-gray-500">Satisfied Clients</p>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+</div>  
+        </section>
+        <hr class="border-t border-gray-300 my-12">
+        <!-- Portfolio Page Content -->
+        <section id="portfolio" class="page-content mt-24">
+            <h2 class="text-6xl md:text-7xl font-light tracking-wide mb-12 text-center">My Portfolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <a href="https://calm-crumble-419a51.netlify.app/">
+                    <img src="media/contentgeneration.png" alt="Project 1" class="w-full h-auto rounded-md mb-4"/>
+                    <h3 class="text-xl font-bold mb-2">Ai ChatBot</h3>
+                    <p class="text-gray-600">My first Ai chatbot that assists in text,image and code generation.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <a href="https://app--resume-ai-copy-1341089e.base44.app/ResumeBuilder">
+                    <img src="media/airesume.png" alt="Project 2" class="w-full h-auto rounded-md mb-4"/>
+                    <h3 class="text-xl font-bold mb-2">AI Resume Builder</h3>
+                    <p class="text-gray-600">This project involved creating an AI-powered resume builder that streamlines the process of crafting professional resumes.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <a href="https://solid-funicular-g4xqgj7v7xv3vgxp-5500.app.github.dev/pine%20city%20zoo/index.html">
+                    <img src="media/zooweb.png" alt="Project 3" class="w-full h-auto rounded-md mb-4"/>
+                    <h3 class="text-xl font-bold mb-2">Zoo Website</h3>
+                    <p class="text-gray-600">This project involved creating a website for a local zoo, showcasing the animals and providing information about the zoo, including maps and weather.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <a href="https://mysentimentanalysisdashboard.streamlit.app/">
+                    <img src="media/sentiment.png" alt="Project 4" class="w-full h-auto rounded-md mb-4"/>
+                    <h3 class="text-xl font-bold mb-2">My sentiment analysis dashboard project</h3>
+                    <p class="text-gray-600">This project involved creating a sentiment analysis dashboard that visualizes user feedback and sentiment trends over time.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <a href="https://psychic-computing-machine-x64g7jqr54pc6pr6-5500.app.github.dev/Kwesss%20junior%20portfolio/">
+                    <img src="media/kwesswebsite.png" alt="Project 5" class="w-full h-auto rounded-md mb-4"/>
+                    <h3 class="text-xl font-bold mb-2">My own music Website (draft)</h3>
+                    <p class="text-gray-600">This project involved creating a website for my own music, showcasing my work and providing information about my events, merchandise, and more.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="border-t border-gray-300 my-12">
+        <!-- Services Page Content -->
+        <section id="services" class="page-content mt-24">
+            <h2 class="text-6xl md:text-7xl font-light tracking-wide mb-12 text-center">Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-4xl mb-4">🎨</p>
+                    <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">Creating intuitive and beautiful user interfaces and experiences.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-4xl mb-4">💻</p>
+                    <h3 class="text-2xl font-bold mb-2">Web design & Development</h3>
+                    <p class="text-gray-600">Building responsive and high-performance websites from scratch.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-4xl mb-4">📈</p>
+                    <h3 class="text-2xl font-bold mb-2">AI Strategist</h3>
+                    <p class="text-gray-600">Developing AI-driven strategies for your business.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-4xl mb-4">🎶</p>
+                    <h3 class="text-2xl font-bold mb-2">Music Portfolio & Artist Websites</h3>
+                    <p class="text-gray-600">Creating stunning portfolios and websites for musicians and artists.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-4xl mb-4">🛍️</p>
+                    <h3 class="text-2xl font-bold mb-2">Branding & Merchandise Design</h3>
+                    <p class="text-gray-600">Designing custom merchandise and branding assets (e.g., T-shirts, logos).</p>
+                </div>
+            </div>
+        </section>
+        <hr class="border-t border-gray-300 my-12">
+        <!-- Contact Me Page Content -->
+        <section id="contact" class="page-content mt-24">
+    <h2 class="text-6xl md:text-7xl font-light tracking-wide mb-12 text-center">Contact Me</h2>
+    <!-- From Uiverse.io by aadium --> 
+    <form class="form" action="https://formspree.io/f/meolnlod" method="POST">
+    <input class="input" type="text" name="name" placeholder="Name" required>
+    <input class="input" type="email" name="email" placeholder="E-Mail I.D." required>
+    <textarea class="textarea" name="message" placeholder="Enter message" required></textarea> 
+    <center><button class="button" type="submit">Get in touch</button></center>
+</form>
+    <div class="flex justify-end items-center mb-12">
+        <a href="media/B.Kokwe Resume(Cv).pdf" target="_blank" rel="noopener" class="hidden md:block px-6 py-2 border-2 border-gray-900 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-200">
+            View CV ↗
+        </a>
+    </div>
+</section>
+    </div>
+    <footer class="bg-white border-t border-gray-200 py-6 mt-16">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+    <!-- Copyright -->
+    <div class="text-gray-500 text-sm mb-4 md:mb-0">
+      &copy; 2025 Bongani Kokwe
+    </div>
+    <!-- Social Icons -->
+    <div class="flex space-x-3 mb-4 md:mb-0">
+      <a href="https://www.linkedin.com/in/bongani-kokwe-860706230/" class="bg-gray-100 hover:bg-gray-200 rounded-lg p-2 transition" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg class="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+      </a>
+      <a href="https://github.com/BONGANI9" class="bg-gray-100 hover:bg-gray-200 rounded-lg p-2 transition" aria-label="GitHub">
+        <!-- GitHub SVG -->
+        <svg class="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.468-2.381 1.236-3.221-.124-.304-.535-1.527.117-3.184 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.657.242 2.88.119 3.184.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@KwessJunior" class="bg-gray-100 hover:bg-gray-200 rounded-lg p-2 transition" aria-label="YouTube">
+        <!-- YouTube SVG -->
+        <svg class="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 576 512">
+          <path d="M549.655 124.083c-6.281-23.725-24.958-42.401-48.684-48.684C465.362 64 288 64 288 64s-177.362 0-212.971 11.399c-23.726 6.283-42.403 24.959-48.684 48.684C16 159.692 16 256 16 256s0 96.308 10.345 131.917c6.281 23.725 24.958 42.401 48.684 48.684C110.638 448 288 448 288 448s177.362 0 212.971-11.399c23.726-6.283 42.403-24.959 48.684-48.684C560 352.308 560 256 560 256s0-96.308-10.345-131.917zM232 334.059V177.941L374.059 256 232 334.059z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- Floating Menu Button -->
+<div id="menu-fab" class="fixed bottom-6 right-6 z-50">
+  <button onclick="document.getElementById('menu-overlay').classList.toggle('hidden')" 
+    class="bg-gray-900 text-white rounded-full p-4 shadow-lg hover:bg-orange-500 transition">
+    <!-- Hamburger Icon -->
+    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Menu Overlay -->
+<div id="menu-overlay" class="hidden fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl shadow-xl p-8 flex flex-col space-y-6 min-w-[220px]">
+    <button onclick="document.getElementById('menu-overlay').classList.add('hidden')" 
+      class="self-end text-gray-500 hover:text-gray-900 mb-2">
+      <!-- Close Icon -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <a href="#home" class="text-gray-700 hover:text-orange-500 font-semibold text-lg transition">Home</a>
+    <a href="#about" class="text-gray-700 hover:text-orange-500 font-semibold text-lg transition">About Me</a>
+    <a href="#portfolio" class="text-gray-700 hover:text-orange-500 font-semibold text-lg transition">Portfolio</a>
+    <a href="#services" class="text-gray-700 hover:text-orange-500 font-semibold text-lg transition">Services</a>
+    <a href="#contact" class="text-gray-700 hover:text-orange-500 font-semibold text-lg transition">Contact</a>
+  </div>
+</div>
+</body>
+</html>

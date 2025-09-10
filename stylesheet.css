@@ -1,0 +1,310 @@
+ body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* From Uiverse.io by joe-watson-sbf */ 
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+.flip-card {
+  background-color: transparent;
+  width: 320px;      /* Bigger width */
+  height: 400px;     /* Bigger height */
+  perspective: 1000px;
+  font-family: 'Inter', sans-serif; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-radius: 1rem;
+}
+
+.flip-card-front {
+background-color: #1f2937;
+color: #f1f5dd;
+border: 1px solid #e5e7eb;
+}
+
+.flip-card-back {
+background-color: #ffffff;
+color: #1f2937;
+transform: rotateY(180deg);
+}
+/* From Uiverse.io by aadium */ 
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #2e404e, #0e0a00);
+  border-radius: 2.5em;
+  padding: 40px;
+  width: 400px;      /* Increased width */
+  height: 420px;     /* Increased height */
+  margin: 0 auto;
+  position: relative;
+}
+
+.form::before {
+  content: '';
+  background-image: linear-gradient(45deg, #000000, #f3f3f3);
+  height: 428px;     /* Match new height */
+  width: 409px;      /* Match new width */
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: -1;
+  border-radius: 2.7em;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #b6b4b4;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: rgb(236, 236, 236);
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+.button:hover {
+  border: 2px solid #ffffff;
+  background: #00000000;
+  color: #ffffff;
+}
+
+.button:active {
+  border: 2px solid #66da4300;
+  background: #ffffff;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #e4dcd7;
+}
+
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 10px);
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.textarea::placeholder {
+  color: #d8d4d2;
+}
+
+.textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
